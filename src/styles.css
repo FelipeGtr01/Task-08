@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+h1 {
+    color: white;
+    background-color: rgb(51, 153, 85);
+    padding: 1%;
+  }
+
+  h2, h3 {
+    color: #121816;
+  }
+
+  body{
+    background-color: #20dba9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  button {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100%; 
+  }
+  

@@ -1,0 +1,16 @@
+<h2> Veículos Disponíveis </h2>
+<ul class="products">
+  <li *ngFor="let product of product">
+    <button [class.selected]="product === selectedPRODUCTS" type="button" (click)="onSelect(product)">
+      <span class="badge">{{product.id}}</span>
+      <span class="name">{{product.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="selectedPRODUCTS">
+  <div>
+    <label for="product-name"><h3> Veículo Selecionado </h3> </label>
+    <input class="input" id="product-name" [(ngModel)]="selectedPRODUCTS.name" placeholder="&nbsp;&nbsp; digite um veículo">
+  </div>
+</div>
